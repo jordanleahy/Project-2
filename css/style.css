@@ -1,0 +1,286 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.6;
+  color: #3a3a3a;
+}
+
+p {
+  font-size: .95em;
+  margin-bottom: 1.5em;
+}
+
+h2,
+h3,
+a {
+  color: #093a58;
+}
+
+h1 {
+  size: 1.5em;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+ /* =================================
+   Base Layout Styles
+ ==================================== */
+
+ /* ---- Navigation ---- */
+
+/* .name {
+  margin: 1.25em;
+} */
+
+.name,
+.main-nav li {
+  text-align: center;
+  background: white;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border: 1px red solid;
+}
+
+.main-nav a {
+  padding: 10px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .95em;
+}
+
+.main-nav a:hover {
+  color: blue;
+}
+
+
+ /* ---- Main---- */
+
+ .main-content {
+   text-align: center;
+   padding-bottom: 30px;
+ }
+
+ .images {
+   width: 100%;
+ }
+
+ .feat-image {
+   width: 100%;
+ }
+
+
+ /* ---- Layout Containers ---- */
+
+.container {
+   padding-left: 1em;
+   padding-right: 1em;
+   border: 1px red solid;
+ }
+
+.main-header {
+   text-align: center;
+   padding-top: .5em;
+   background: #F1F1F1;
+   padding-bottom: 30px;
+ }
+
+.main-footer {
+   text-align: center;
+   padding: 2em .5em;
+   background: #F1F1F1;
+ }
+
+ .main-footer-nav {
+   padding: .5em .5em;
+   background: #F1F1F1;
+ }
+
+.footer-name {
+  float: left;
+}
+
+.to-top {
+  float: right;
+}
+
+.footer-nav li {
+  display: none;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+@media (min-width: 789px) {
+
+  .container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: auto;
+  }
+
+ /* ---- Header---- */
+
+  .name,
+  .main-nav li {
+    background: none;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-right: -4px;
+  }
+
+ .feat-image {
+   float: right;
+   border: 1px red solid;
+   width: 40%;
+ }
+
+  .feat-text {
+    float: left;
+    text-align: left;
+    width: 58%;
+    border: 1px red solid;
+  }
+
+
+ /* ---- Main ---- */
+
+ .col {
+   display: inline-block;
+   width: 50%;
+   margin-right: -4px;
+   vertical-align: top;
+   padding-left: 1em;
+   padding-right: 1em;
+ }
+
+  /* ---- Footer ---- */
+
+  .main-footer-nav {
+     padding: .5em 1em;
+     background: #F1F1F1;
+     width: 100%;
+     margin: 0 auto;
+   }
+
+   .footer-name {
+     display: inline-block;
+     float: left;
+     margin: 10px 0 10px 0;
+     border: 1px red solid;
+   }
+
+   .footer-nav li {
+     display: inline-block;
+     float: right;
+     margin: 10px 0 10px 10px;
+     border: 1px red solid;
+   }
+
+   .to-top {
+     display: none;
+   }
+
+   .main-footer-nav {
+     border-top: grey solid 1px;
+   }
+
+  .clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .container {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* ---- Header---- */
+
+  .main-header {
+     padding-top: .5em;
+     background: #F1F1F1;
+     padding-bottom: 30px;
+     overflow: auto;
+   }
+
+ .name {
+  float: left;
+
+ }
+
+ .main-nav {
+   float: right;
+   border: 1px red solid;
+  }
+
+  .main-nav li {
+     display: inline-block;
+     margin-left: 15px;
+   }
+
+  .feat-image {
+    float: right;
+    border: 1px red solid;
+    width: 40%;
+  }
+
+ .feat-text {
+   float: left;
+   text-align: left;
+   width: 58%;
+   border: 1px red solid;
+ }
+
+  /* ---- Main ---- */
+ .col {
+   display: inline-block;
+   width: 33%;
+   margin-right: -4px;
+   vertical-align: top;
+   padding-left: 1em;
+   padding-right: 1em;
+ }
+
+   /* ---- Footer ---- */
+
+ .main-footer {
+    width 80%;
+    padding: .5em .5em;
+    background: #F1F1F1;
+ }
+
+ .to-top {
+   display: none;
+ }
+
+ .clearfix::after {
+   content: '';
+   display: table;
+   clear: both;
+ }
+
+}
