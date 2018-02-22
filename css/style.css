@@ -1,3 +1,5 @@
+
+
 /* =================================
   Base Element Styles
 ==================================== */
@@ -7,9 +9,10 @@
 }
 
 body {
-  font-family: 'Varela Round', sans-serif;
+  font-family: Helvetica, arial, sans-serif;
   line-height: 1.6;
   color: #3a3a3a;
+  font-size: 1em;
 }
 
 p {
@@ -24,7 +27,9 @@ a {
 }
 
 h1 {
-  size: 1.5em;
+  font-size: 1.5em;
+  font-family: helvetica;
+  font-weight: 500;
 }
 
 h3 {
@@ -41,9 +46,9 @@ a {
 
  /* ---- Navigation ---- */
 
-/* .name {
-  margin: 1.25em;
-} */
+.main-nav {
+  border-bottom: 1px white solid;
+}
 
 .name,
 .main-nav li {
@@ -51,7 +56,6 @@ a {
   background: white;
   margin-top: 6px;
   margin-bottom: 6px;
-  border: 1px red solid;
 }
 
 .main-nav a {
@@ -62,8 +66,9 @@ a {
 }
 
 .main-nav a:hover {
-  color: blue;
+  color: lightblue;
 }
+
 
 
  /* ---- Main---- */
@@ -87,7 +92,7 @@ a {
 .container {
    padding-left: 1em;
    padding-right: 1em;
-   border: 1px red solid;
+   /* border: 1px red solid; */
  }
 
 .main-header {
@@ -120,6 +125,10 @@ a {
   display: none;
 }
 
+.footer-nav a:hover {
+  color: lightblue;
+}
+
 .clearfix::after {
   content: '';
   display: table;
@@ -149,15 +158,15 @@ a {
 
  .feat-image {
    float: right;
-   border: 1px red solid;
    width: 40%;
+   padding-top: 20px;
  }
 
   .feat-text {
     float: left;
     text-align: left;
     width: 58%;
-    border: 1px red solid;
+    padding-top: 20px;
   }
 
 
@@ -185,14 +194,14 @@ a {
      display: inline-block;
      float: left;
      margin: 10px 0 10px 0;
-     border: 1px red solid;
    }
 
    .footer-nav li {
      display: inline-block;
      float: right;
      margin: 10px 0 10px 10px;
-     border: 1px red solid;
+     border-right: solid 1px #093a58;
+     padding-right: 10px;
    }
 
    .to-top {
@@ -229,22 +238,22 @@ a {
 
  .name {
   float: left;
-
+  padding-top: 20px;
  }
 
  .main-nav {
    float: right;
-   border: 1px red solid;
+   padding-top: 20px;
   }
 
   .main-nav li {
      display: inline-block;
      margin-left: 15px;
+     vertical-align: middle;
    }
 
   .feat-image {
     float: right;
-    border: 1px red solid;
     width: 40%;
   }
 
@@ -252,7 +261,10 @@ a {
    float: left;
    text-align: left;
    width: 58%;
-   border: 1px red solid;
+ }
+
+ #home {
+   background-color: white;
  }
 
   /* ---- Main ---- */
@@ -268,7 +280,7 @@ a {
    /* ---- Footer ---- */
 
  .main-footer {
-    width 80%;
+    width: 100%;
     padding: .5em .5em;
     background: #F1F1F1;
  }

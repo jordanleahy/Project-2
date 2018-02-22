@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Jordan Leahy Project 2</title>
-    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name=viewport content="width=device-width, initial-scale=1">
@@ -15,8 +14,9 @@
         <h1 class="name"><a href="#">Jordan Leahy</a></h1>
         <nav class="main-nav">
           <ul>
-            <li><a href"#home">Home</a></li>
+            <li class="active"><a href="#home">Home</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -34,32 +34,32 @@
       <div class="container" id="Portfolio">
         <h3>Portfolio</h3>
         <div class="primary col">
-          <img class="images" src="images/portfolio-1.png">
+          <img class="images" src="images/portfolio-1.png" alt="Marketing Page">
           <h2>Marketing Page</h2>
           <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
         </div>
         <div class="secondary col">
-          <img class="images" src="images/portfolio-2.png">
+          <img class="images" src="images/portfolio-2.png" alt="Search Page">
           <h2>Search Page</h2>
           <p>This project searches through a specific database to find information that the user is trying to look up.</p>
         </div>
         <div class="primary col">
-          <img class="images" src="images/portfolio-3.png">
+          <img class="images" src="images/portfolio-3.png" alt="Travel App">
           <h2>Travel App</h2>
           <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
         </div>
         <div class="secondary col">
-          <img class="images" src="images/portfolio-4.png">
+          <img class="images" src="images/portfolio-4.png" alt="Map of Favorite Spots">
           <h2>Map of Favorite Spots</h2>
           <p>This project uses mapp api's to plat points for my favorite spots in the city for a do-it-yourself walking tour.</p>
         </div>
         <div class="primary col">
-          <img class="images" src="images/portfolio-5.png">
+          <img class="images" src="images/portfolio-5.png" alt="Photo Gallery">
           <h2>Photo Gallery</h2>
           <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
         </div>
         <div class="secondary col">
-          <img class="images" src="images/portfolio-6.png">
+          <img class="images" src="images/portfolio-6.png" alt="Calculator">
           <h2>Calculator</h2>
           <p>Someone can enter in the numbers they want, and press the big blue button and get the results.</p>
         </div>
@@ -69,12 +69,12 @@
 
     <footer class="main-footer">
       <!-- Skills -->
-      <div>
+      <div id="skills">
         <h3>Skills</h3>
         <ul>
           <li><a href="#">Product Design</a></li>
           <li><a href="#">Business Development</a></li>
-          <li><a href="#"></a>Busines Models</li>
+          <li><a href="#">Busines Models</a></li>
         </ul>
       </div>
       <!-- Contact -->
@@ -82,16 +82,18 @@
         <h3>CONTACT</h3>
         <p>If you're interested in chatting or want more inforamtion about what I've been up working on, please reach out</p>
         <p>Phone <strong>917 446.0887</strong></p>
-        <p>Email <strong>jordan@varanhealth.com</strong></p>
+        <p>Email <a href="mailto:jordan@varanhealth.com"> <strong>jordan@varanhealth.com</strong></a></p>
+        <p>Website <a href="https://www.varanhealth.com" target="_blank"> <strong>www.varanhealth.com</strong></a></p>
       </div>
       <div class="container clearfix">
         <div class="main-footer-nav">
-          <p class="footer-name"><a href="">Jordan Leahy</a></p>
+          <h1 class="footer-name"><a href="">Jordan Leahy</a></h1>
           <p class="to-top"><a href="#home">Back to Top</a></p>
           <nav>
             <ul class="footer-nav">
-              <li><a href="index.html">HOME</a></li>
+              <li><a href="#home">HOME</a></li>
               <li><a href="#portfolio">PORTFOLIO</a></li>
+              <li><a href="#skills">SKILLS</a></li>
               <li><a href="#contact">CONTACT</a></li>
             </ul>
           </nav>
